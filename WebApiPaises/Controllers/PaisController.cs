@@ -60,5 +60,21 @@ namespace WebApiPaises.Controllers
             context.SaveChanges();
             return Ok();
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            //verificamos si el pais existe en la BD
+            var pais = context.Paises.FirstOrDefault(x => x.Id == id);
+
+            //en caso de que el pais no existe enviamos un NotFound
+            if (pais == null)
+            {
+                return NotFound();
+            }
+            context.Paises.Remove(pais);
+            context.SaveChanges();
+            return Ok(pais);
+        }
     }
 }
