@@ -34,7 +34,7 @@ namespace WebApiPaises
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ApplicationDbContext context)
         {
             if (env.IsDevelopment())
             {
@@ -47,6 +47,18 @@ namespace WebApiPaises
 
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            //se agregan datos de prueba en caso de que la BD se encuentre sin elementos
+
+                if (!context.Paises.Any())
+                {
+                    context.Paises.AddRange(new List<Pais>() {
+                     new Pais() { Nombre = "México"},
+                     new Pais() { Nombre = "USA"},
+                     new Pais() { Nombre = "Cuba"}
+                     });
+                    context.SaveChanges();
+                }
         }
     }
 }
