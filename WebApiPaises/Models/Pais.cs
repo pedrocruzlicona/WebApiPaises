@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace WebApiPaises.Models
@@ -9,5 +10,8 @@ namespace WebApiPaises.Models
 
         [StringLength(30)]
         public string Nombre { get; set; }
+
+        //a cada pais le pertenece un listado de provincias
+        public List<Provincia> Provincias { get; set; }
     }
 }

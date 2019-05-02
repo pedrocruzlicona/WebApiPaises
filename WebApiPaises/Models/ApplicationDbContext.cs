@@ -12,5 +12,9 @@ namespace WebApiPaises.Models
         }
         //para crear la tabla de paises
         public DbSet<Pais> Paises { get; set; }
+
+        //para crear la tabla provincias
+        public DbSet<Provincia> Provincias { get; set; }
+
     }
 }

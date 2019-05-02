@@ -31,6 +31,12 @@ namespace WebApiPaises
             //habilitamos a Entity Framework para que utilice la base de datos en memoria
             services.AddDbContext<ApplicationDbContext>(Options => Options.UseInMemoryDatabase("paisDB"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().AddJsonOptions(ConfigureJson);
+        }
+
+        private void ConfigureJson(MvcJsonOptions obj)
+        {
+            obj.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,8 +59,12 @@ namespace WebApiPaises
                 if (!context.Paises.Any())
                 {
                     context.Paises.AddRange(new List<Pais>() {
-                     new Pais() { Nombre = "México"},
-                     new Pais() { Nombre = "USA"},
+                     new Pais() { Nombre = "México",Provincias = new List<Provincia>(){ 
+                     new Provincia(){Nombre="Hidalgo"},
+                     new Provincia(){Nombre="Guadalajara"}
+                     } },
+                     new Pais() { Nombre = "USA",Provincias = new List<Provincia>(){
+                   new Provincia(){ Nombre="California" } } },
                      new Pais() { Nombre = "Cuba"}
                      });
                     context.SaveChanges();

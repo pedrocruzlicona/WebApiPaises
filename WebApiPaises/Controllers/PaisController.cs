@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApiPaises.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -24,7 +25,7 @@ namespace WebApiPaises.Controllers
         [HttpGet]
         public IEnumerable<Pais> Get()
         {
-            return context.Paises.ToList();
+            return context.Paises.Include(x => x.Provincias).ToList();
         }
         [HttpGet("{id}",Name = "paisCreado")]
         public IActionResult GetById(int id)
