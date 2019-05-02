@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace WebApiPaises.Models
 {
@@ -13,6 +14,7 @@ namespace WebApiPaises.Models
         [ForeignKey("pais")]
         public int PaisId { get; set; }
         //propiedad navigacional, a cada provincia le pertenece un Pais
+        [JsonIgnore]
         public Pais pais { get; set; }
     }
 }

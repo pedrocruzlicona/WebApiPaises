@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{16ACAF1C-BE0A-4974-9E81-2E154A70EEA5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiPaises/Controllers/ProvinciaController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiPaises/Models/Provincia.cs">
     <Files>
       <File FileName="WebApiPaises/Controllers/PaisController.cs" Line="13" Column="5" />
-      <File FileName="WebApiPaises/Controllers/ProvinciaController.cs" Line="15" Column="1" />
+      <File FileName="WebApiPaises/Controllers/ProvinciaController.cs" Line="27" Column="68" />
+      <File FileName="WebApiPaises/Models/Provincia.cs" Line="16" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApiPaises" expanded="True">
             <Node name="WebApiPaises" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="ProvinciaController.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Provincia.cs" selected="True" />
               </Node>
-              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
