@@ -48,5 +48,17 @@ namespace WebApiPaises.Controllers
             }
             return BadRequest(ModelState);
         }
+        [HttpPut("{id}")]
+        public IActionResult Put([FromBody] Pais pais, int id)
+        {
+            if(pais.Id != id)
+            {
+                return BadRequest();
+            }
+
+            context.Entry(pais).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            context.SaveChanges();
+            return Ok();
+        }
     }
 }
