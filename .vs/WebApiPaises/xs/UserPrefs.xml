@@ -1,17 +1,19 @@
 ﻿<Properties StartupConfiguration="{16ACAF1C-BE0A-4974-9E81-2E154A70EEA5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiPaises/Controllers/PaisController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiPaises/Models/Pais.cs">
     <Files>
-      <File FileName="WebApiPaises/Models/ApplicationDbContext.cs" Line="8" Column="83" />
-      <File FileName="WebApiPaises/Startup.cs" Line="32" Column="84" />
-      <File FileName="WebApiPaises/Controllers/PaisController.cs" Line="24" Column="17" />
+      <File FileName="WebApiPaises/Controllers/PaisController.cs" Line="47" Column="91" />
+      <File FileName="WebApiPaises/Controllers/ValuesController.cs" Line="9" Column="17" />
+      <File FileName="WebApiPaises/Models/Pais.cs" Line="8" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApiPaises" expanded="True">
-            <Node name="WebApiPaises" expanded="True" selected="True">
+            <Node name="WebApiPaises" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Pais.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

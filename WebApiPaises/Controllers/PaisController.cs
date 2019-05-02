@@ -10,7 +10,7 @@ using WebApiPaises.Models;
 namespace WebApiPaises.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Pais")]
+    [Route("api/[controller]")]
     public class PaisController : Controller
     {
         private readonly ApplicationDbContext context;
@@ -25,6 +25,28 @@ namespace WebApiPaises.Controllers
         public IEnumerable<Pais> Get()
         {
             return context.Paises.ToList();
+        }
+        [HttpGet("{id}",Name = "paisCreado")]
+        public IActionResult GetById(int id)
+        {
+            var pais = context.Paises.FirstOrDefault(x => x.Id == id);
+            if (pais == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(pais);
+        }
+        [HttpPost]
+        public IActionResult Post([FromBody] Pais pais)
+        {
+            if (ModelState.IsValid)
+            {
+                context.Paises.Add(pais);
+                context.SaveChanges();
+                return new CreatedAtRouteResult("paisCreado", new { id = pais.Id }, pais);
+            }
+            return BadRequest(ModelState);
         }
     }
 }
