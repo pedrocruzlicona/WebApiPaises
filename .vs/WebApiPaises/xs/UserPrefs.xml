@@ -1,12 +1,27 @@
 ﻿<Properties StartupConfiguration="{16ACAF1C-BE0A-4974-9E81-2E154A70EEA5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiPaises/Controllers/ValuesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApiPaises/Models/Pais.cs">
     <Files>
-      <File FileName="WebApiPaises/Controllers/ValuesController.cs" Line="1" Column="1" />
+      <File FileName="WebApiPaises/Controllers/ValuesController.cs" Line="30" Column="10" />
+      <File FileName="WebApiPaises/Models/Pais.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebApiPaises" expanded="True">
+            <Node name="WebApiPaises" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Pais.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.WebApiPaises FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.WebApiPaises PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

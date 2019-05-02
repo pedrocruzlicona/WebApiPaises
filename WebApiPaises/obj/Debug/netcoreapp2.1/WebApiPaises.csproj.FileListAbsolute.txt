@@ -1,0 +1,14 @@
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/bin/Debug/netcoreapp2.1/WebApiPaises.deps.json
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/bin/Debug/netcoreapp2.1/WebApiPaises.runtimeconfig.json
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/bin/Debug/netcoreapp2.1/WebApiPaises.runtimeconfig.dev.json
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/bin/Debug/netcoreapp2.1/WebApiPaises.dll
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/bin/Debug/netcoreapp2.1/WebApiPaises.pdb
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.csprojAssemblyReference.cache
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.csproj.CoreCompileInputs.cache
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.RazorAssemblyInfo.cache
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.RazorAssemblyInfo.cs
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.AssemblyInfoInputs.cache
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.AssemblyInfo.cs
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.RazorTargetAssemblyInfo.cache
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.dll
+/Users/pedro/Projects/WebApiPaises/WebApiPaises/obj/Debug/netcoreapp2.1/WebApiPaises.pdb
